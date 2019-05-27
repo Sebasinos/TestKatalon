@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>El usuario debe ser Modificado</description>
+   <name>Modificar Usuario</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c703773f-cd70-4da1-be50-adeae8a157c6</testCaseGuid>
+</TestCaseEntity>
