@@ -92,8 +92,8 @@ class CreacionUsuario {
 		WebUI.click(findTestObject('Object Repository/Page_Arquitectura/a_Back'))
 	}
 
-	@Then("El nombre de usuario debe ser {string}")
-	public void el_nombre_de_usuario_debe_ser(String string) {
+	@Then("El nombre rut del aval debe ser {string}")
+	public void el_nombre_rut_del_aval_debe_ser(String string) {
 		WebUI.verifyTextPresent(string , true)
 		WebUI.closeBrowser()
 	}
