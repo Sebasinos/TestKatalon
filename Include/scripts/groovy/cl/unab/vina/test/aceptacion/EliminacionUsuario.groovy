@@ -54,21 +54,22 @@ class EliminacionUsuario {
 	@Given("Abro el navegador y voy a la pagina de usuario")
 	public void abro_el_navegador_y_voy_a_la_pagina_de_usuario() {
 		WebUI.openBrowser('')
-		WebUI.navigateToUrl('http://localhost:3000/usuarios/')	
+		WebUI.navigateToUrl('http://localhost:3000/usuarios/')
 	}
-	
+
 	@When("Hago click sobre desatroy")
 	public void hago_click_sobre_desatroy() {
 		WebUI.click(findTestObject('Object Repository/Page_Arquitectura/a_Destroy (1)'))
 	}
-	
+
 	@When("Acepto el mensaje de alerta")
 	public void acepto_el_mensaje_de_alerta() {
 		WebUI.acceptAlert()
 	}
-	
+
 	@Then("Debe generarse la {string} de eliminacion")
 	public void debe_generarse_la_de_eliminacion(String string) {
 		WebUI.verifyTextPresent(string , true)
+		WebUI.closeBrowser()
 	}
 }

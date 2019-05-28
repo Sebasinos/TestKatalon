@@ -22,15 +22,15 @@ Feature: Crear Usuario
 
   @Crear_Nuevo_Usuario
   Scenario Outline: Crear usuario en ambiente Visual
-    Given Abro el navegador y voy a la pagina de creacion de usuario
-    When Hago click sobre nuevo usuario
-    And Ingreso el nombre <nombre>
-    And Ingreso el Apellido <apellido>
-    And Ingreso el usuario <usuario>
-    And Ingreso el password <password>
-    When Doy click sobre crear usuario
-    And Vuelvo a la seleccion de usuario
-    Then El nombre de usuario debe ser <usuario>
+    Given Abro El navegador y voy a la pagina de creacion de usuario
+    When Hago Click sobre nuevo usuario
+    And Ingreso El nombre <nombre>
+    And Ingreso El Apellido <apellido>
+    And Ingreso El usuario <usuario>
+    And Ingreso El password <password>
+    When Doy Click sobre crear usuario
+    And Vuelvo A la seleccion de usuario
+    Then El Nombre de usuario debe ser <usuario>
 
     Examples: 
       | nombre   | apellido  | usuario    | password |

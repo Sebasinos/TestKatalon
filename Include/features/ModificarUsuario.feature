@@ -30,7 +30,7 @@ Feature: Modificar Usuario
     And Ingreso el nuevo password. <password>
     When Doy click sobre update usuario.
     And vuelvo a la seleccion de usuarios.
-    Then El nuevo nombre debe ser. <usuario>
+    Then El nuevo nombre debe ser. <nombre>
     And El nuevo Apellido debe ser. <apellido>
     And El nuevo usuario debe ser. <usuario>
     And El nuevo password debe ser. <password>

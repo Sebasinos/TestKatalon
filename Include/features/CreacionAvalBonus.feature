@@ -35,7 +35,7 @@ Feature: Crear Aval
     And selecciono el dia de inscripcion del usuario <dia>
     When Doy click sobre crear avalador
     And Vuelvo a la seleccion de avalador
-    Then El nombre rut del aval debe ser <rutaval>
+    Then El Rut del aval debe ser <rutaval>
 
     Examples: 
       | rutuser     | rutaval    | nombre | apellidop | apellidom | rent      | ano    | mes | dia |

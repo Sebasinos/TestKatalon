@@ -51,49 +51,49 @@ class CreacionUsuario {
 	/**
 	 * The step definitions below match with Katalon sample Gherkin steps
 	 */
-	@Given("Abro el navegador y voy a la pagina de creacion de usuario")
+	@Given("Abro El navegador y voy a la pagina de creacion de usuario")
 	public void abro_el_navegador_y_voy_a_la_pagina_de_creacion_de_usuario() {
 		WebUI.openBrowser('')
 		WebUI.navigateToUrl('http://localhost:3000/usuarios/')
 	}
 
-	@When("Hago click sobre nuevo usuario")
+	@When("Hago Click sobre nuevo usuario")
 	public void hago_click_sobre_nuevo_usuario() {
 		WebUI.click(findTestObject('Object Repository/Page_Arquitectura/a_New Usuario'))
 	}
 
-	@When("Ingreso el nombre {string}")
+	@When("Ingreso El nombre {string}")
 	public void ingreso_el_nombre(String string) {
 		WebUI.setText(findTestObject('Object Repository/Page_Arquitectura/input_Nombre_usuarionombre'), string)
 	}
 
-	@When("Ingreso el Apellido {string}")
+	@When("Ingreso El Apellido {string}")
 	public void ingreso_el_Apellido(String string) {
 		WebUI.setText(findTestObject('Object Repository/Page_Arquitectura/input_Apellido_usuarioapellido'), string)
 	}
 
-	@When("Ingreso el usuario {string}")
+	@When("Ingreso El usuario {string}")
 	public void ingreso_el_usuario(String string) {
 		WebUI.setText(findTestObject('Object Repository/Page_Arquitectura/input_Nombre usuario_usuarionombre_usuario'), string)
 	}
 
-	@When("Ingreso el password {string}")
+	@When("Ingreso El password {string}")
 	public void ingreso_el_password(String string) {
 		WebUI.setText(findTestObject('Object Repository/Page_Arquitectura/input_Password_usuariopassword'), string)
 	}
 
-	@When("Doy click sobre crear usuario")
+	@When("Doy Click sobre crear usuario")
 	public void doy_click_sobre_crear_usuario() {
 		WebUI.click(findTestObject('Object Repository/Page_Arquitectura/input_Password_commit'))
 	}
 
-	@When("Vuelvo a la seleccion de usuario")
+	@When("Vuelvo A la seleccion de usuario")
 	public void vuelvo_a_la_seleccion_de_usuario() {
 		WebUI.click(findTestObject('Object Repository/Page_Arquitectura/a_Back'))
 	}
 
-	@Then("El nombre rut del aval debe ser {string}")
-	public void el_nombre_rut_del_aval_debe_ser(String string) {
+	@Then("El Nombre de usuario debe ser {string}")
+	public void el_Nombre_de_usuario_debe_ser(String string) {
 		WebUI.verifyTextPresent(string , true)
 		WebUI.closeBrowser()
 	}

@@ -122,9 +122,9 @@ class CrearAvalBonus {
 		WebUI.click(findTestObject('Object Repository/Page_Arquitectura/a_Back'))
 	}
 
-	@Then("El nombre rut del aval debe ser {int}")
-	public void el_nombre_rut_del_aval_debe_ser(Integer int1) {
-		WebUI.verifyTextPresent(int1 , true)
+	@Then("El Rut del aval debe ser {string}")
+	public void el_rut_del_aval_debe_ser(String string) {
+		WebUI.verifyTextPresent(string , true)
 		WebUI.closeBrowser()
 	}
 }
